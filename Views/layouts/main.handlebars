@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRUD NODEJS</title>
+	<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='/css/style.css'>
+</head>
+<body>
+
+	{{!-- Menu Padrão --}}
+
+	<div class="">
+		<div class="card-body">
+			<h1 class="text-center">Sistema da Gestão - Clinica de Psicopedagogia</h1>
+		</div>
+	</div>
+	<div class="page">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+					<a href="/"> 
+						DashBoard
+					</a>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#pacientes" type="button" role="tab" aria-controls="profile" aria-selected="false">
+					<a href="pacientes"> 
+						Pacientes
+					</a>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+					<a href="agenda">
+						Agenda
+					</a>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+					<a href="profissionais"> 
+						Profissionais
+					</a>
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	{{!-- Conteudo dinamico --}}
+
+	{{{body}}}
+
+	{{!-- Scripts javascript --}}
+	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src='bootstrap/js/bootstrap.min.js'></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
